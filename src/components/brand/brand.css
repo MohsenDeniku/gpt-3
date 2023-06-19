@@ -15,3 +15,9 @@
     justify-content: center;
     align-items: center;
 }
+
+@media screen and (max-width: 370px) {
+    .gpt3__brand div {
+        margin-bottom: 25px;
+    }
+}
