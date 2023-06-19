@@ -47,17 +47,25 @@
     line-height: 24px;
     color: var(--color-text);
 }
-
+@media screen and (max-width: 800px) {
+    .gpt3__features-container__feature-title h1 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+}
 @media screen and (max-width: 550px) {
     .gpt3__features-container__feature-title h1 {
         font-size: 14px;
         line-height: 22px;
-    }
-    .gpt3__features-container__feature-title p {
-        font-size: 12px;
-        line-height: 20px;
+        inline-size: 250px;
     }
     .gpt3__features-container__feature {
+        flex-direction: column;
         margin: 1rem 0;
     }
+    .gpt3__features-container__feature-title {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
 }
